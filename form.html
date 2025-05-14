@@ -4,50 +4,67 @@
     <head>
         <meta charset="UTF-8">
         <title>Contacta con nosotros</title>
+        <link rel="stylesheet" type="text/css" href="./main.css"/>
     </head>
 
-    <header>
+    <header> 
 
+        <div>
+            <a href="index.html"><img src="iconoweb.svg"></a>
+        </div>
+
+        <h1>JM Games</h1>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Juegos</a></li>
+                <li><a href="aboutwe.html">Sobre Nosotros</a></li>
+                <li><a href="form.html">Soporte</a></li>
+            </ul>
+        </nav> 
     </header>
 
     <body>
 
-        <h1>Conctacta nosotros</h1>
-        <h2>Expresa tus ideas y opiniones de nuestra web con nosotros a través dels siguiente formulario</h2>
+        <div id="formulario">
+
+            <h1>Conctacta nosotros</h1>
+            <h2>Expresa tus ideas y opiniones de nuestra web con nosotros a través dels siguiente formulario</h2>
        
-        <form action="form.html" method="post">
+            <form action="form.html" method="post">
             
-            </div>
-                <p>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre"/>
-                </p>
-            </div>
+                
+                    <p>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre"/>
+                    </p>
+                
 
-            <div>
-                <p>
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" id="apellidos" name="apellidos"/>
-                </p>
-            </div>
+               
+                    <p>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos"/>
+                    </p>
+               
 
-            <div>
-                <p>
-                    <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo"/>
-                </p>
-            </div>
+               
+                    <p>
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo"/>
+                    </p>
+             
+           
+                    <p>
+                        <label for="comentario">Comentario</label>
+                        <input type="text" id="comentario" name="comentario"/>
+                    </p>
 
-            <div>
-                <p>
-                    <label for="comentario">Comentario</label>
-                    <input type="text" id="comentario" name="comentario"/>
-                </p>
-            </div>
 
-            <input type="submit" value="Enviar"/>
+                <input type="submit" value="Enviar"/>
 
-        </form>
+            </form>
+        </div>
+        
 
     </body>
 
