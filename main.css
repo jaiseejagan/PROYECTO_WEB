@@ -28,4 +28,64 @@ body { background-image:url(./image.png);
 
 footer {position: fixed; width: 100%;}
 
+h1 {
+  margin-bottom: 1rem;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Mantiene cuadrado usando relación de aspecto */
+  background: #007acc;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.revealed {
+  background: #ffffff;
+  color: #007acc;
+  border: 2px solid #007acc;
+  cursor: default;
+}
+
+#restartBtn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#restart {display: flex; justify-content: center; padding: 5%;}
+
+#titlememory {
+  text-align: center;
+  padding: 5%;
+}
 
